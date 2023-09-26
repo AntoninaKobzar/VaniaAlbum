@@ -14,13 +14,10 @@ section {
   width: 100%;
   height: 80px;
 }
-
-footer,
-.navbar {
-  /* background: url(../img/pattern.png) no-repeat; */
-  background: linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-  background-size: 100%;
+.navbar-nav {
+  background-color: var(--color1);
 }
+footer,
 .navbar {
   background-color: var(--color1);
   /* border-bottom: 1px solid var(--accent_color1); */
@@ -38,18 +35,22 @@ footer,
   color: var(--accent_color2);
 }
 .navbar-toggler {
-  background-color: var(--color2);
-  /* color: var(--color3); */
-  /* stroke: var(--color2);
-  fill: var(--color2); */
-}
-.navbar-toggler-icon {
-  background-color: transparent;
-  stroke: var(--color3);
-  fill: var(--color3);
+  color: var(--color3);
 }
 
-.btn-itd {
+/* .navbar-toggler:active {
+  border-color: var(--accent_color1);
+} */
+/* .navbar-toggler-icon {
+  background-color: transparent;
+  stroke: var(--color3);
+  width: 30px;
+  height: 30px;
+  fill: white;
+} */
+*/
+
+/* .btn-itd {
   display: block;
   max-width: 200px;
   margin: 0 auto;
@@ -60,7 +61,7 @@ footer,
 .btn-itd:hover {
   color: var(--bs-white);
   background-color: var(--accent_color1);
-}
+} */
 
 .embed-container {
   position: relative;
@@ -107,14 +108,14 @@ footer,
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 600px;
+  min-height: 750px;
 }
 .img_author {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  max-width: 400px;
+  max-width: 100%;
 }
 .album {
   display: flex;
@@ -181,6 +182,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 40px;
   position: relative;
   background: radial-gradient(circle, var(--color3), transparent);
   border-radius: 50%;
@@ -218,14 +220,6 @@ footer {
 .social-icons {
   font-size: 24px;
   margin: 0 10px;
-}
-.cocial-icons {
-  width: 20px;
-  height: 20px;
-  color: white;
-}
-.fab fa-facebook {
-  width: 20px;
-  height: 20px;
-  fill: white;
+  fill: var(--color3);
+  text-decoration: none;
 }
